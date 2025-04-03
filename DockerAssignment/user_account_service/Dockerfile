@@ -7,10 +7,10 @@ FROM node:17-alpine
 ADD . /app
 
 # Install dependencies
-RUN cd /app && npm install
+RUN cd /app && npm install --production
 
 # Expose our server port.
-EXPOSE 3000
+EXPOSE 80
 
 # Run our app.
 CMD ["node", "/app/index.js"]
