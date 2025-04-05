@@ -8,7 +8,7 @@ ADD . /app
 
 # Install dependencies
 RUN cd /app; \
-     npm install --production
+    npm install --production
 
 # Expose our server port.
 EXPOSE 80
